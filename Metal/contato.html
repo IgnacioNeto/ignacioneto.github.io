@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gontato - Responsivando</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Descrição resumida do site -->
+    <meta name="description" content="Fale com a equipe - Responsivando">
+
+    <!-- Palavras-chave de página -->
+    <meta name="keywords" content="contato, criação de sites, Responsivando">
+
+    <!-- Inserindo favicon -->
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+    <!-- Cabeçalho contem apenas o menu nesse exercício -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Página inicial">início</a></li>
+                <li><a href="galeria.html" title="galeria de trabalhos">galeria</a></li>
+                <li><a href="multimidea.html" title="conteudo multimidea">multimídea</a></li>
+                <li><a href="contato.html" title="fale conosco">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contato">
+        <h1>Fale Conosco</h1>
+        <p>Preencha o formulário abaixo, ligue para (11) 2345:6789 ou se prefirir visite-nos na rua Francisco Coimbra, 403 - Penha -São Paulo</p>
+
+        <div class="form">
+            <!-- Método "Get" passa a informação pela URL, preferivel usar "Post" -->
+            <form action="envia.php" method="post">
+
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required> <!-- (name) Serve para recuperar do .php (required) Torna obrigatório o preenchimento. -->
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="digite seu melhor e-mail">
+                </div>
+
+                <div>
+                    <label for="fone">Fone:</label>
+                    <input type="tel" id="fone" name="fone" placeholder="DDD + Fone">
+                </div>
+
+                <div>
+                    <label for="msg">Mensagem:</label>
+                    <textarea name="msg" id="msg" placeholder="dúvidas, críticas e sugestões..."></textarea>
+                </div>
+
+                <div>
+                    <!-- Obs: (value) comanda o título do botão -->
+                    <input type="submit" name="enviar" id="enviar" value="Mandar">
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="mapa">
+
+            <!-- Mudar  width="100%" height="400"-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1761016747014!2d-46.542480384428444!3d-23.5261677661801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e46752d26e5%3A0xfd7d34baaa261c06!2sR.%20Francisco%20Coimbra%2C%20403%20-%20Penha%20de%20Fran%C3%A7a%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003639-000!5e0!3m2!1spt-BR!2sbr!4v1644416750402!5m2!1spt-BR!2sbr" width="100%" height="270" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+        </div>
+
+
+      
+
+    </main>
+
+
+    <!-- rodapé do site -->
+    <footer>
+        <p>Metallica "Monster of Rock - Responsivo"</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimidea - Responsivando</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Descrição resumida do site -->
+    <meta name="description" content="Aprenda design responsivo">
+
+    <!-- Palavras-chave de página -->
+    <meta name="keywords" content="aprenda, video design responsivo">
+
+    <!-- Inserindo favicon -->
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+    <!-- Cabeçalho contem apenas o menu nesse exercício -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Página inicial">início</a></li>
+                <li><a href="galeria.html" title="galeria de trabalhos">galeria</a></li>
+                <li><a href="multimidea.html" title="conteudo multimidea">multimídea</a></li>
+                <li><a href="contato.html" title="fale conosco">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <main class="multimidea">
+       <h1>Conteúdo Multimídea</h1>
+       <h2>Vídeo</h2>
+
+       <!-- Inserindo vídeos diretamente no HTML -->
+
+       <div class="video1">
+           <video controls poster="imagens/Metallica.jpg">
+               <source src="videos/For Whom the Bell Tolls (Live)-Metallica.mp4" type="video/mp4">
+               <source src="videos/For Whom the Bell Tolls (Live)-Metallica.avi" type="video/avi">
+               <source src="videos/For Whom the Bell Tolls (Live)-Metallica.ogv" type="video/ogv">
+               <source src="videos/For Whom the Bell Tolls (Live)-Metallica.webm" type="video/webm">
+               Seu navegador não suporta vídeos. Faça o <a href="videos/For Whom the Bell Tolls (Live)-Metallica.mp4" title="downloud do vídeo">downloud</a>
+           </video>
+       </div>
+
+        <!-- Audio Local -->
+        <h2>Músicas</h2>
+        <div class="musicas">
+            <div class="bell">
+                
+                <em><h3>For Whom The Bell Tolls</h3></em>
+                
+                <audio src="audio/For Whom The Bell Tolls - Metallica.mp3" controls></audio>
+            </div>
+            <div class="master">
+                <em><h3>Master of Puppets</h3></em>
+                <audio src="audio/Master of Puppets-Metallica.mp3" controls></audio>
+            </div>
+            <div class="day">
+                <em><h3>The Day That Never Comes</h3></em>
+                <audio src="audio/THE DAY THAT NEVER COMES- METALLICA.mp3" controls></audio>
+            </div>
+        </div>
+
+    
+   </main>
+
+
+    <!-- rodapé do site -->
+    <footer>
+        <p>Metallica "Monster of Rock - Responsivo"</p>
+    </footer>
+    
+</body>
+</html>

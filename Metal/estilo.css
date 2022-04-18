@@ -1,0 +1,262 @@
+/* Linha abaixo importa do Google Fonts as Fontes: Montserrat e Roboto */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    max-width: 100%; /* Torna a imagem responsiva*/
+   
+}
+
+.galeriah1 {
+    text-align: center;
+}
+.galeria img {
+    width: 350px;
+}
+section.destaque img {
+    display: block;
+    margin: auto;
+
+}
+
+nav{
+    width: 100%;
+    background-color: black;
+    line-height: 50px; /* Altura do nav*/
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Tira a bolinha da lista*/
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none; /* Tira o sublinhado*/
+    text-transform: capitalize; /* Transforma o texto em: maiusculas, minusculas ou apenas a primeira letra maiuscula */
+    padding: 10px 20px; /* 10px (Cima e baixo) 20px (Esquerda e direita)*/
+    transition: all 0.5s; /* Tempo de transição */
+}
+
+/* houver: Quando passo o mouse em cima realiza o programado abaixo*/
+/* active: Para facilitar no celular */
+nav a:hover, nav a:active{
+    background-color: #686868;
+    /* Sombra no texto */
+    text-shadow: black 3px 5px 8px; /* 1º Deslocamento horizontal - 2º Deslocamento vertical - 3º Suavização da sombra */
+    border-radius: 5px;
+
+
+}
+
+.col1, .col2 {
+    margin-bottom: 50px;
+     /* border: #999 1px solid;
+    padding: 0 20px;  */
+
+}
+.col1 img {
+    height: 300px;
+}
+.col2 img {
+    height: 300px;
+}
+.musicas {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer{
+    color: White;
+    font-size: 25px;
+    height: 30px;
+    background-color: Black;
+    text-align: center; /* Centraliza o texto */
+}
+
+.galeria {
+    display: grid;
+
+    /* Possibilidades de uso */
+
+    /* grid-template-columns: 200px 200px 200px 200px; */
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(4,25%); */
+
+    /* Ajuste as colunas com no mín. 150px e no máximo automático */
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+
+    gap: 5px;
+}
+.video1 {
+    display: flex;
+    justify-content: center;
+}
+
+.multimidea h1, h2 {
+    text-align: center;
+    text-decoration: underline;
+
+}
+.multimidea h3 {
+    text-align: center;
+
+
+}
+.começoh1, .multimidea h1, .contato h1, .galeriah1 {
+
+    color: blue;
+    text-decoration: underline;
+
+}
+
+.form label {
+    font-weight: bolder; /* Negrito*/
+    border-bottom: 1px solid #300040 ;  /* Sublinhado em todo o elemento */
+    /* text-decoration: underline; (Só abaixo da palavra)*/
+    margin-bottom: 20px; /* Espaçamento*/
+    width: 20%; /* Largura da Label*/
+    display: inline-block; /* Necessário para o Width pegar. Transformar o elemento em linha para bloco(Transformar em bloco)*/
+}
+
+
+.form input {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px 1px;
+    /* (cor de sombra), (desl.x), (desl.y), (desfoque da sombra), (tamanho da sombra) */
+    width: 70%; /* Largura da Label*/
+    height: 30px;
+    border: 1px solid black;
+}
+
+.form input:hover, .form textarea:hover {
+    background-color: #ebebeb80;
+
+}
+
+.form {
+    padding: 0 5%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+}
+
+.contato h1 {
+    text-align: center;
+}
+
+.form textarea {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px 1px;
+    /* (cor de sombra), (desl.x), (desl.y), (desfoque da sombra), (tamanho da sombra) */
+    width: 70%; /* Largura da Label*/
+    height: 60px;
+    border: 1px solid #300040;
+}
+
+/* Pseudo classe :focus formata o formulário apenas quando ele está ativo (recebendo foco) */
+
+.form input:focus, .form textarea:focus {
+    outline-color: cyan /* (Outline) Linha depois da borda (por fora da borda)*/
+    outline-style: dotted;
+    outline-width: 2px;
+
+}
+
+/* Pseudo classe :valid formata o formulário quando ele está preenchido corretamente */
+
+.form input:valid {
+    border: rgba(0, 128, 0, 0.6) 2px solid;
+}
+
+/* Pseudo classe :invalid formata o formulário quando ele está preenchido incorretamente */
+
+.form input:invalid {
+    border: rgba(255, 0, 0, 0.6) 2px solid;
+}
+
+/* Seletor intemediário que pega somente o (botão Submit) */
+
+.form input[type=submit] {
+    border: black 2px solid; /* Borda aplicada no botão */
+    background-image: linear-gradient(gray, rgb(53, 52, 52)); /* Gradiente aplicado no botão */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 92%;
+    margin-bottom: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+/* breakpoints - ponto de quebra de layout (Olhar no DevTools F12 e testar) */
+
+/* CSS para telas acima de 760px (Este exercício) */
+@media screen and (min-width: 760px){
+
+    .colunas {
+        display: flex;
+        flex-wrap: wrap; /* Determina a quebra do conteudo Flex-Box */
+        justify-content: space-between;
+
+    }
+
+    .col1, .col2 {
+        width: 49%;
+        margin-bottom: 10px;
+    }
+
+    .form, .mapa {
+        vertical-align: top;
+        display: inline-block;
+        width: 49%;
+
+    }
+
+/* Recua o padding para não comer a palavra Mensagem */
+    .form {
+        padding: 0 1%;
+
+    
+    }
+
+ 
+
+
+
+}
+
+ @media screen and (max-width: 950px){
+
+    .musicas {
+        display: flex;
+        flex-wrap: wrap; 
+        margin: auto;
+        width: 32.5%;
+        margin-bottom: 10px;
+
+    }
+ 
+
+
+
+} 
