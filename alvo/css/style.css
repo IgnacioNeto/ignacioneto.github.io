@@ -113,8 +113,8 @@ section img {
     width: 240px;
     height: 120px;
     position: absolute; /* Posiciona o texto */
-    top: 80%;
-    left: 10%;
+    top: 65%;
+    left: 15%;
     text-align: right;
 }
 
@@ -261,12 +261,7 @@ video {
 
 @media screen and (max-width: 600px) {
     .destaqueTexto {
-        /* width: 240px;
-        height: 120px;
-        position: absolute; 
-        top: 70%; */
         left: 18%;
-        /* text-align: right; */
     }
 
 }
