@@ -23,9 +23,16 @@ Esta classe deverá sempre ser colocada no elemento pai dos elementos a serem fl
     background-size: cover; /*  Ajusta a imagem de fundo ao tamanho do elemento */
     background-attachment: fixed; /* Cria o efeito paralaxe */
     height: 70vh;
+    margin-bottom: 70px;
 
 }
-
+/* Reescrevendo a classe do Bootstrap */
+.btn-primary {
+    background-color: #0000FF !important;
+    border: none !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+}
 
 /* CSS reset */
 p, h1, h2, h3, figure, nav, ul {
@@ -146,8 +153,8 @@ section img {
 .colunas h1 {
     width: 100%;
     font-size: 22px;
-    color: #0000FF;
-    text-decoration: underline;
+    color:#000;
+    font-weight: bold;
     padding-bottom: 10px;
 } 
 .disponiveis {
@@ -155,7 +162,6 @@ section img {
     text-align: center;
     font-size: 32px;
     color: #0000FF;
-    text-decoration: underline;
     padding-bottom: 20px;
 } 
 .texvideo {
@@ -242,11 +248,12 @@ label {
     font-weight: bold;
     text-align: center; 
 } 
-#mapa{ margin-bottom: 10px;}
+#mapa{ margin-bottom: 35px;}
 
 .cursos {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 
 }
 video {
@@ -319,7 +326,7 @@ video {
         justify-content:center;
         margin: auto;
         width: 32.5%;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
 
     }
     video {
